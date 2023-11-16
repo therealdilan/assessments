@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"slices"
 	"strconv"
 )
 
@@ -27,6 +28,7 @@ func main() {
 			fmt.Println("Invalid Input!")
 		} else {
 			sli = append(sli, val)
+			slices.Sort(sli)
 			fmt.Println(sli)
 		}
 
